@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Create Group | InnoHub</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <div class="container nav-container">
+
+    <a href="index.html" class="logo">
+      <span class="logo-icon">IH</span>
+      <span>Inno<span>Hub</span></span>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      ☰
+    </button>
+
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="groups.html">Groups</a>
+      <a href="upload.html" class="nav-upload">+ Upload Project</a>
+    </nav>
+
+  </div>
+
+</header>
+
+<main>
+
+<section class="page-header">
+
+  <div class="container">
+
+    <span class="section-label">COLLABORATE</span>
+
+    <h1>Create an Innovation Group</h1>
+
+    <p>
+      Bring your team together and create a dedicated space
+      for your projects.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="container form-container">
+
+    <form id="groupForm" class="project-form">
+
+      <div class="form-section">
+
+        <div class="form-section-heading">
+
+          <span>01</span>
+
+          <div>
+            <h2>Group Information</h2>
+            <p>Tell people about your team.</p>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+
+          <label>Group Name *</label>
+
+          <input
+            type="text"
+            id="groupName"
+            required
+            placeholder="e.g. Tech Titans"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label>Group Description *</label>
+
+          <textarea
+            id="groupDescription"
+            rows="5"
+            required
+            placeholder="What does your group work on?"
+          ></textarea>
+
+        </div>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+
+            <label>College / Organization</label>
+
+            <input
+              type="text"
+              id="organization"
+              placeholder="College or organization"
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label>Domain</label>
+
+            <input
+              type="text"
+              id="groupDomain"
+              placeholder="AI, Web, IoT, Electronics..."
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="form-section">
+
+        <div class="form-section-heading">
+
+          <span>02</span>
+
+          <div>
+            <h2>Group Members</h2>
+            <p>Add your team members.</p>
+          </div>
+
+        </div>
+
+        <div id="groupMembers">
+
+          <div class="member-input">
+
+            <input
+              type="text"
+              placeholder="Member name"
+            >
+
+            <input
+              type="text"
+              placeholder="Role"
+            >
+
+            <button
+              type="button"
+              class="remove-member"
+              onclick="removeMember(this)"
+            >
+              ×
+            </button>
+
+          </div>
+
+        </div>
+
+        <button
+          type="button"
+          id="addGroupMember"
+          class="btn btn-outline"
+        >
+          + Add Member
+        </button>
+
+      </div>
+
+      <div class="form-section">
+
+        <div class="form-section-heading">
+
+          <span>03</span>
+
+          <div>
+            <h2>Group Branding</h2>
+            <p>Add an optional group image.</p>
+          </div>
+
+        </div>
+
+        <div class="upload-zone">
+
+          <input
+            type="file"
+            id="groupImage"
+            accept="image/*"
+          >
+
+          <div class="upload-zone-content">
+
+            <div class="upload-icon">
+              ↑
+            </div>
+
+            <h3>Upload Group Image</h3>
+
+            <p>
+              Add a logo, team photo or group banner.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div id="groupImagePreview"></div>
+
+      </div>
+
+      <div class="form-actions">
+
+        <a href="groups.html" class="btn btn-secondary">
+          Cancel
+        </a>
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+        >
+          Create Group →
+        </button>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-bottom">
+    © 2026 InnoHub
+  </div>
+
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/groups.js"></script>
+
+</body>
+</html>
