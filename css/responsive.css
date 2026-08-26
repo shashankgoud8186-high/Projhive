@@ -1,0 +1,127 @@
+@media (max-width: 900px) {
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: white;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom: 1px solid var(--border);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .project-grid,
+  .group-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .section {
+    padding: 65px 0;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+    letter-spacing: -3px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-stats {
+    gap: 25px;
+  }
+
+  .hero-stats strong {
+    font-size: 22px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .project-grid,
+  .group-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section {
+    padding: 22px;
+  }
+
+  .member-input {
+    grid-template-columns: 1fr 1fr 35px;
+  }
+
+  .image-preview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filter-bar {
+    flex-direction: column;
+  }
+
+  .filter-bar select {
+    width: 100%;
+  }
+
+  .detail-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    padding: 70px 0 55px;
+  }
+
+  .page-header h1 {
+    font-size: 43px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}
