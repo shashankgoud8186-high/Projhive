@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Upload Project | InnoHub</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container nav-container">
+
+    <a href="index.html" class="logo">
+      <span class="logo-icon">IH</span>
+      <span>Inno<span>Hub</span></span>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="groups.html">Groups</a>
+      <a href="upload.html" class="nav-upload active">+ Upload Project</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="page-header">
+  <div class="container">
+    <span class="section-label">SHOWCASE YOUR WORK</span>
+    <h1>Upload Your Project</h1>
+    <p>
+      Tell the InnoHub community what you built, how you built it
+      and what technologies you used.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container form-container">
+
+    <form id="projectForm" class="project-form">
+
+      <div class="form-section">
+        <div class="form-section-heading">
+          <span>01</span>
+          <div>
+            <h2>Project Information</h2>
+            <p>Introduce your project.</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+
+          <div class="form-group full">
+            <label>Project Name *</label>
+            <input
+              type="text"
+              id="projectTitle"
+              required
+              placeholder="e.g. Smart Campus Management System"
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Category *</label>
+
+            <select id="projectCategory" required>
+              <option value="">Select Category</option>
+              <option>Web Development</option>
+              <option>AI & ML</option>
+              <option>IoT</option>
+              <option>Electronics</option>
+              <option>Mobile App</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Group</label>
+
+            <select id="projectGroup">
+              <option value="">Individual Project</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label>Short Description *</label>
+
+            <textarea
+              id="projectDescription"
+              rows="4"
+              required
+              placeholder="Briefly explain what your project does..."
+            ></textarea>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="form-section">
+
+        <div class="form-section-heading">
+          <span>02</span>
+          <div>
+            <h2>Project Story</h2>
+            <p>Explain your idea and implementation.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Problem Statement</label>
+
+          <textarea
+            id="problemStatement"
+            rows="5"
+            placeholder="What problem are you trying to solve?"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>How Did You Build It?</label>
+
+          <textarea
+            id="implementation"
+            rows="7"
+            placeholder="Explain your approach, architecture, development process, algorithms, hardware setup, etc."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Challenges & Solutions</label>
+
+          <textarea
+            id="challenges"
+            rows="5"
+            placeholder="What difficulties did your team face and how did you solve them?"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Future Improvements</label>
+
+          <textarea
+            id="futureScope"
+            rows="5"
+            placeholder="What would you like to improve or add in the future?"
+          ></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-section">
+
+        <div class="form-section-heading">
+          <span>03</span>
+          <div>
+            <h2>Technologies</h2>
+            <p>Add the tools and technologies used.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <label>Technologies Used *</label>
+
+          <input
+            type="text"
+            id="technologies"
+            required
+            placeholder="JavaScript, React, Python, Arduino, Firebase..."
+          >
+
+          <small>
+            Separate technologies using commas.
+          </small>
+
+        </div>
+
+        <div class="form-group">
+
+          <label>GitHub / Project Link</label>
+
+          <input
+            type="url"
+            id="projectLink"
+            placeholder="https://github.com/username/project"
+          >
+
+        </div>
+
+      </div>
+
+      <div class="form-section">
+
+        <div class="form-section-heading">
+          <span>04</span>
+          <div>
+            <h2>Project Images</h2>
+            <p>Add screenshots or project photographs.</p>
+          </div>
+        </div>
+
+        <div class="upload-zone">
+
+          <input
+            type="file"
+            id="projectImages"
+            accept="image/*"
+            multiple
+          >
+
+          <div class="upload-zone-content">
+            <div class="upload-icon">↑</div>
+            <h3>Upload Project Images</h3>
+            <p>
+              Drag images here or click to browse
+            </p>
+            <small>PNG, JPG or WEBP</small>
+          </div>
+
+        </div>
+
+        <div id="imagePreview" class="image-preview"></div>
+
+      </div>
+
+      <div class="form-section">
+
+        <div class="form-section-heading">
+          <span>05</span>
+          <div>
+            <h2>Team Members</h2>
+            <p>Add people who worked on this project.</p>
+          </div>
+        </div>
+
+        <div id="membersContainer">
+
+          <div class="member-input">
+            <input
+              type="text"
+              placeholder="Member name"
+            >
+
+            <input
+              type="text"
+              placeholder="Role"
+            >
+
+            <button
+              type="button"
+              class="remove-member"
+              onclick="removeMember(this)"
+            >
+              ×
+            </button>
+          </div>
+
+        </div>
+
+        <button
+          type="button"
+          id="addMember"
+          class="btn btn-outline"
+        >
+          + Add Member
+        </button>
+
+      </div>
+
+      <div class="form-actions">
+
+        <a href="projects.html" class="btn btn-secondary">
+          Cancel
+        </a>
+
+        <button type="submit" class="btn btn-primary">
+          Publish Project →
+        </button>
+
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom">
+    © 2026 InnoHub
+  </div>
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/upload.js"></script>
+
+</body>
+</html>
