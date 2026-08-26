@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InnoHub - A collaborative project showcase platform for students and innovators.">
+  <title>InnoHub | Build. Share. Innovate.</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">IH</span>
+      <span>Inno<span>Hub</span></span>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+    <nav id="mainNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="groups.html">Groups</a>
+      <a href="upload.html" class="nav-upload">+ Upload Project</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-background"></div>
+
+  <div class="container hero-content">
+    <div class="hero-badge">
+      🚀 Student Innovation Platform
+    </div>
+
+    <h1>
+      Build.
+      <span>Share.</span>
+      Innovate.
+    </h1>
+
+    <p>
+      InnoHub is a collaborative space where students and teams can
+      showcase projects, document their ideas, share technologies,
+      explain their implementation and inspire others.
+    </p>
+
+    <div class="hero-actions">
+      <a href="projects.html" class="btn btn-primary">
+        Explore Projects →
+      </a>
+
+      <a href="create-group.html" class="btn btn-secondary">
+        Create a Group
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <strong id="heroProjectCount">0</strong>
+        <span>Projects</span>
+      </div>
+
+      <div>
+        <strong id="heroGroupCount">0</strong>
+        <span>Groups</span>
+      </div>
+
+      <div>
+        <strong id="heroTechCount">0</strong>
+        <span>Technologies</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="section-heading">
+      <div>
+        <span class="section-label">DISCOVER</span>
+        <h2>Featured Projects</h2>
+        <p>Explore what students and innovators are building.</p>
+      </div>
+
+      <a href="projects.html" class="text-link">
+        View All →
+      </a>
+    </div>
+
+    <div id="featuredProjects" class="project-grid"></div>
+
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+
+    <div class="section-heading light">
+      <div>
+        <span class="section-label">COLLABORATE</span>
+        <h2>Innovation Groups</h2>
+        <p>Build together and showcase your team's journey.</p>
+      </div>
+
+      <a href="groups.html" class="text-link light-link">
+        View Groups →
+      </a>
+    </div>
+
+    <div id="featuredGroups" class="group-grid"></div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="cta-card">
+      <div>
+        <span class="section-label">YOUR IDEA MATTERS</span>
+        <h2>Have a project worth sharing?</h2>
+        <p>
+          Create your project page and document everything from the
+          problem statement to implementation.
+        </p>
+      </div>
+
+      <a href="upload.html" class="btn btn-primary">
+        Upload Your Project
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+
+    <div>
+      <div class="logo">
+        <span class="logo-icon">IH</span>
+        <span>Inno<span>Hub</span></span>
+      </div>
+      <p>Where ideas become innovation.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="projects.html">Projects</a>
+      <a href="groups.html">Groups</a>
+      <a href="upload.html">Upload</a>
+      <a href="create-group.html">Create Group</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 InnoHub. Built for innovators.
+  </div>
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
